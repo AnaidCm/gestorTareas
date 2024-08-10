@@ -1,0 +1,62 @@
+/*Estilos generales*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100vh;  /*viewport heigth (altura de la ventana grafica)*/
+    display: flex;/*para que las 2 instrucciones siguientes puedan efectuarse*/
+    justify-content: center;/*centrar horizontalmente*/
+    align-items: center;/*centrar verticalmente*/
+}
+/*Estilos para el contenedor principal*/
+#app {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* centrado en x centrado en y  el grosor de la sombra y el color*/
+}
+/*Estilos para el formulario*/
+form {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Estilos al imput*/
+input {
+    width: 75%;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+/*Estilos al botón*/
+button {
+    padding: 5px 8px;/*5px arriba - abajo  y 8px de iz - der*/
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/*Estilos de la lista*/
+ul {
+    list-style: none;
+    padding: 0;
+}
+/*Estilos a los elementos de la lista*/
+li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Estilos para cuando una tarea este completada*/
+li.complted {
+    text-decoration: line-through;
+    color: #888;
+    
+}
