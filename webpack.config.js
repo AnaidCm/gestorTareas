@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+    mode: 'development',
     entry: './src/index.js', //Punto de entrada de la aplicación
     output: {
         filename: 'bundle.js', //Nombre del archivo de salida
@@ -10,7 +11,7 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/, //Regex para identificar archivos css
-                use: ['style-loader', 'css-louder'], //Librerías louders que sirven para procesar archivos CSS
+                use: ['style-loader', 'css-loader'], //Librerías louders que sirven para procesar archivos CSS
             },
             {
                 test: /\.js$/, //Regex sirve para identificar archivos JS

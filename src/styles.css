@@ -55,7 +55,7 @@ li {
     align-items: center;
 }
 /*Estilos para cuando una tarea este completada*/
-li.complted {
+li.completed {
     text-decoration: line-through;
     color: #888;
     
